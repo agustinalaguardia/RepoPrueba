@@ -1,8 +1,6 @@
 /*------------------------------------------------------------------------------- generales paginas */
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather+Sans:wght@300&display=swap");
 * {
-  margin: 1rem;
-
   box-sizing: border-box;
 
   font-family: "Merriweather Sans", sans-serif;
@@ -12,7 +10,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-row-gap: 10px;
-  /* ACA EN EL AREA "DIBUJO" LAS COLUMNAS Y FILAS QUE VAN A OCUPAR DICHAS ETIQUETAS HIJO */
+
   grid-template-areas:
     "header header header"
     "main main main"
@@ -43,7 +41,6 @@ a:hover {
   grid-area: header;
   /* APLICO FLEXBOX DESDE EL HEADER HACIA SUS HIJOS PARA ORDENAR EL LOGO Y EL MENU */
   width: 100%;
-  display: flex;
   align-items: center;
   grid-gap: 20px;
 }
@@ -125,4 +122,23 @@ footer {
 .img404 {
   width: 400px;
   height: 350px;
+}
+
+/* MEDIA QUERIES */
+/*tablet*/
+@media only screen and (min-width: 768px) {
+  body {
+    grid-template-areas:
+      "header" "header" "header"
+      "main" "main" "main"
+      "footer" "footer" "footer";
+  }
+}
+
+/*celular */
+@media only screen and (max-width: 320px) {
+  body {
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr;
+  }
 }
