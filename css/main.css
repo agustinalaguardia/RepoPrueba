@@ -1,0 +1,478 @@
+/*------------------------------------header*/
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather+Sans:wght@300&display=swap");
+.header {
+  /* CONECTO LO QUE DIAGRAME EN EL GRID AREA CON EL ELEMENTO EN CUESTION */
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+  /* APLICO FLEXBOX DESDE EL HEADER HACIA SUS HIJOS PARA ORDENAR EL LOGO Y EL MENU */
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.headerLogo {
+  width: 20%;
+  height: 30%;
+}
+
+/*------------------------------------footer*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: black;
+}
+
+footer .footerLista {
+  list-style: none;
+  color: darkslateblue;
+  font-size: 20px;
+  text-align: right;
+  width: 100%;
+}
+
+footer .footerP {
+  color: gray;
+}
+
+footer .footerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+footer .footerMenu > li {
+  text-align: left;
+  padding: 1rem;
+}
+
+/*-------------------------------------------------------------------------------nosotros*/
+.nosotrosParrafo {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*-------------------------------------------------------------------------------*productos*/
+.productosParrafo {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*-------------------------------------------------------------------------------*faqs*/
+.faqsParrafo {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.faqsParrafo .faqsLista {
+  list-style: none;
+}
+
+/*-------------------------------------------------------------------------------*404*/
+.img404 {
+  width: 400px;
+  height: 350px;
+}
+
+/*mapa colores usados en paginas*/
+.color--violeta {
+  color: indigo;
+}
+
+.color--gris {
+  color: gray;
+}
+
+.color--blanco {
+  color: white;
+}
+
+.color--negro {
+  color: black;
+}
+
+.color--violetaOscuro {
+  color: darkslateblue;
+}
+
+/*ejemplo condicional con h5*/
+h5 {
+  background-color: none;
+}
+
+.sectionForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  row-gap: 2px;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.formInputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.formBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+/*------------------------------------------------------------------------------- generales paginas */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  /*-ms-grid-columns: (1fr)[3];*/
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+h5 {
+  color: indigo;
+  font-size: 30px;
+  font-family: "Fjalla One", sans-serif;
+}
+
+h3 {
+  color: indigo;
+  font-family: "Fjalla One", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  -webkit-transition: color, 1s;
+  transition: color, 1s;
+}
+
+a:hover {
+  color: white;
+}
+
+/*------------------------------------header*/
+.header {
+  /* CONECTO LO QUE DIAGRAME EN EL GRID AREA CON EL ELEMENTO EN CUESTION */
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+  /* APLICO FLEXBOX DESDE EL HEADER HACIA SUS HIJOS PARA ORDENAR EL LOGO Y EL MENU */
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.headerLogo {
+  width: 20%;
+  height: 30%;
+}
+
+/*------------------------------------main*/
+.main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: main;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  justify-items: center;
+}
+
+/*------------------------------------footer*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: black;
+}
+
+.footerLista {
+  list-style: none;
+  color: darkslateblue;
+  font-size: 20px;
+  text-align: right;
+  width: 100%;
+}
+
+.footerP {
+  color: gray;
+}
+
+.footerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.footerMenu > li {
+  text-align: left;
+  padding: 1rem;
+}
+
+/*------------------------------------------------------------------------------- index*/
+.indexImg {
+  width: 25%;
+}
+
+.indexImg2 {
+  width: 33.1%;
+}
+
+/*-------------------------------------------------------------------------------nosotros*/
+.nosotrosParrafo {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*-------------------------------------------------------------------------------*productos*/
+.productosParrafo {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*-------------------------------------------------------------------------------*faqs*/
+.faqsParrafo {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.faqsLista {
+  list-style: none;
+}
+
+/*-------------------------------------------------------------------------------*contacto */
+/*-------------------------------------------------------------------------------*404*/
+.img404 {
+  width: 400px;
+  height: 350px;
+}
+
+/* MEDIA QUERIES */
+/*tablet*/
+@media only screen and (min-width: 768px) {
+  body {
+    grid-template-areas:
+      "header" "header" "header"
+      "main" "main" "main"
+      "footer" "footer" "footer";
+  }
+  .footerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .footerMenu > li {
+    text-align: left;
+    padding: 1rem;
+  }
+}
+
+/*celular */
+@media only screen and (max-width: 320px) {
+  body {
+    grid-template-areas: "header" "main" "footer";
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .indexImg {
+    width: 100%;
+  }
+  .indexImg2 {
+    width: 100%;
+  }
+  .footerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footerMenu > li {
+    text-align: left;
+    padding: 1rem;
+  }
+}
+
+/* MEDIA QUERIES */
+/*tablet*/
+@media only screen and (min-width: 768px) {
+  body {
+    grid-template-areas:
+      "header" "header" "header"
+      "main" "main" "main"
+      "footer" "footer" "footer";
+  }
+  .footerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footerMenu > li {
+    text-align: center;
+    padding: 0.5rem;
+  }
+}
+
+/*celular */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  body {
+    grid-template-areas: "header" "main" "footer";
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .indexImg {
+    width: 100%;
+  }
+  .indexImg2 {
+    width: 100%;
+  }
+  footer .footerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  footer .footerMenu > li {
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .sectionForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  .formInputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

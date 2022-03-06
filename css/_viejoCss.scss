@@ -1,0 +1,169 @@
+/*------------------------------------------------------------------------------- generales paginas */
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather+Sans:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+
+  font-family: "Merriweather Sans", sans-serif;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-row-gap: 10px;
+
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+h5 {
+  color: indigo;
+  font-size: 30px;
+  font-family: "Fjalla One", sans-serif;
+}
+h3 {
+  color: indigo;
+  font-family: "Fjalla One", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: gray;
+  transition: color, 1s;
+}
+
+a:hover {
+  color: white;
+}
+
+/*------------------------------------header*/
+.header {
+  /* CONECTO LO QUE DIAGRAME EN EL GRID AREA CON EL ELEMENTO EN CUESTION */
+  grid-area: header;
+  /* APLICO FLEXBOX DESDE EL HEADER HACIA SUS HIJOS PARA ORDENAR EL LOGO Y EL MENU */
+  width: 100%;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.headerLogo {
+  width: 20%;
+  height: 30%;
+}
+/*------------------------------------main*/
+.main {
+  grid-area: main;
+  width: 100%;
+  display: grid;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+}
+/*------------------------------------footer*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  grid-area: footer;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+}
+.footerLista {
+  list-style: none;
+  color: darkslateblue;
+  font-size: 20px;
+
+  text-align: right;
+  width: 100%;
+}
+.footerP {
+  color: gray;
+}
+.footerMenu {
+  display: flex;
+  flex-direction: row;
+}
+.footerMenu > li {
+  text-align: left;
+  padding: 1rem;
+}
+/*------------------------------------------------------------------------------- index*/
+
+.indexImg {
+  width: 25%;
+}
+
+.indexImg2 {
+  width: 33.1%;
+}
+
+/*-------------------------------------------------------------------------------nosotros*/
+.nosotrosParrafo {
+  flex-direction: row;
+  display: flex;
+}
+/*-------------------------------------------------------------------------------*productos*/
+.productosParrafo {
+  flex-direction: row;
+  display: flex;
+}
+/*-------------------------------------------------------------------------------*faqs*/
+.faqsParrafo {
+  flex-direction: column;
+  display: flex;
+}
+.faqsLista {
+  list-style: none;
+}
+
+/*-------------------------------------------------------------------------------*contacto */
+
+/*-------------------------------------------------------------------------------*404*/
+.img404 {
+  width: 400px;
+  height: 350px;
+}
+
+/* MEDIA QUERIES */
+/*tablet*/
+@media only screen and (min-width: 768px) {
+  body {
+    grid-template-areas:
+      "header" "header" "header"
+      "main" "main" "main"
+      "footer" "footer" "footer";
+  }
+
+  .footerMenu {
+    display: flex;
+    flex-direction: row;
+  }
+  .footerMenu > li {
+    text-align: left;
+    padding: 1rem;
+  }
+}
+
+/*celular */
+@media only screen and (max-width: 320px) {
+  body {
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr;
+  }
+
+  .indexImg {
+    width: 100%;
+  }
+
+  .indexImg2 {
+    width: 100%;
+  }
+  .footerMenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerMenu > li {
+    text-align: left;
+    padding: 1rem;
+  }
+}

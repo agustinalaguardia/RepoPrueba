@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Como contactarse con Espacio Dual por dudas o mas informacion ">
+    <meta
+      name="description"
+      content="Como contactarse con Espacio Dual por dudas o mas informacion "
+    />
     <title>Contacto | Espacio Dual</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -12,7 +15,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
     <header class="header">
@@ -36,10 +39,7 @@
           >
             <ul class="navbar-nav align-items-center">
               <li class="nav-item">
-                <a
-                  class="nav-link  m-3"
-                  aria-current="page"
-                  href="../index.html"
+                <a class="nav-link m-3" aria-current="page" href="../index.html"
                   >Inicio</a
                 >
               </li>
@@ -62,107 +62,113 @@
     </header>
 
     <main class="main">
-        <section>
-            <h3 class="my-5">Contactenos</h3>
-            <form action="" method="get" enctype="text/plain" class="my-5">
-              <fieldset>
-                <legend>Datos consulta</legend>
-                <section>
-                  <label for="nombre" ">Nombre</label>
-                  <input
-                    type="text"
-                    name=""
-                    id="nombre"
-                   
-                    placeholder="Ingrese nombre"
-                  />
-                </section>
-                <section>
-                  <label for="apellido" >Apellido</label>
-                  <input
-                    type="text"
-                    name=""
-                    id="apellido"
-                   
-                    placeholder="Ingrese apellido"
-                  />
-                </section>
-                <section>
-                  <label for="pronombre" 
-                    >Pronombre personal</label
-                  >
-                  <select name="Pronombre personal" id="pronombre">
-                    <option value="" disabled selected>Selecione opcion</option>
-                    <option  value="El">El</option>
-                    <option  value="Ella">Ella</option>
-                    <option  value="Elle">Elle</option>
-                  </select>
-                </section>
-    
-                <section>
-                  <label for="email" >Email</label>
-                  <input
-                    type="email"
-                    name=""
-                    id="email"
-                   
-                    placeholder="Ingrese email"
-                  />
-                  <section >
-                    Deseo recibir novedades y descuentos exclusivos al mail
-                    <input type="checkbox" name="acepta" id="" value="1" />
-                  </section>
-                </section>
-                <section>
-                  <label for="area" >Detalles consulta </label>
-                  <textarea
-                    name=""
-                    id="area"
-                    cols="30"
-                    rows="10"
-                    class="letraBlanca"
-                    placeholder=" Ingrese Detalles consulta"
-                  ></textarea>
-                </section>
-                <section>
-                    <button class="btn btn-secondary" type="reset">Resetear formulario</button>
+      <section class="sectionForm">
+        <div class="formulario mt-5">
+          <h3 class="my-5">Contactenos</h3>
+          <form action="" method="get" enctype="text/plain" class="my-5">
+            <fieldset>
+              <legend>Datos consulta</legend>
+              <section class="formInputs">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  name=""
+                  id="nombre"
+                  placeholder="Ingrese nombre"
+                />
+              </section>
+              <section class="formInputs">
+                <label for="apellido">Apellido</label>
+                <input
+                  type="text"
+                  name=""
+                  id="apellido"
+                  placeholder="Ingrese apellido"
+                />
+              </section>
+              <section class="formInputs">
+                <label for="pronombre">Pronombre personal</label>
+                <select name="Pronombre personal" id="pronombre">
+                  <option value="" disabled selected>Selecione opcion</option>
+                  <option value="El">El</option>
+                  <option value="Ella">Ella</option>
+                  <option value="Elle">Elle</option>
+                </select>
+              </section>
 
-                  <button class="btn btn-secondary" type="submit">Enviar formulario</button>
-
+              <section class="formInputs">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name=""
+                  id="email"
+                  placeholder="Ingrese email"
+                />
+                <section>
+                  Deseo recibir novedades y descuentos exclusivos al mail
+                  <input type="checkbox" name="acepta" id="" value="1" />
                 </section>
-              </fieldset>
-            </form>
-            <div class="contactoParrafo">
-              <h3>Ubicación taller y tienda</h3>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12139.426355522353!2d-3.7055853!3d40.4784376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8eda75065493445d!2sEspacio%20Dual%20Escuela%20de%20cer%C3%A1mica!5e0!3m2!1ses-419!2suy!4v1646292194195!5m2!1ses-419!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-          </section>
+              </section>
+              <section class="formInputs">
+                <label for="area">Detalles consulta </label>
+                <textarea
+                  name=""
+                  id="area"
+                  cols="30"
+                  rows="10"
+                  class="letraBlanca"
+                  placeholder=" Ingrese Detalles consulta"
+                ></textarea>
+              </section>
+              <section class="formBtn">
+                <button class="mt-3 w-50 btn btn-secondary" type="reset">
+                  Resetear formulario
+                </button>
+
+                <button class="mt-3 w-50 btn btn-secondary" type="submit">
+                  Enviar formulario
+                </button>
+              </section>
+            </fieldset>
+          </form>
+        </div>
+        <div class="contactoParrafo mt-5">
+          <h3 class="my-5">Ubicación taller y tienda</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.856589813712!2d-3.7077739846022086!3d40.47843757935781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42299e871b3e33%3A0x8eda75065493445d!2sEspacio%20Dual%20Escuela%20de%20cer%C3%A1mica!5e0!3m2!1ses-419!2suy!4v1646584147698!5m2!1ses-419!2suy"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer" >
-        <p class=footerP>Regístrate a nuestro newsletter y obtén las últimas novedades:</p>
-        <form action="" method="get" enctype="text/plain">
-          <input
-            type="email"
-            placeholder="Tu correo electronico"
-            required
-          />
-          <button class="btn btn-secondary" type="submit">Enviar formulario</button>
-        </form>
-        <ul class="footerMenu" class="footerLista">
-          <li class="footerLista">
-            <a href="https://www.facebook.com/espaciodualceramica">Facebook</a>
-          </li>
-          <li class="footerLista">
-            <a href="https://www.instagram.com/espaciodualceramica/?hl=es-la"
-              >Instagram</a
-            >
-          </li>
-          <li class="footerLista">
-            <a href="https://www.youtube.com/c/EspacioDualCeramica">Youtube</a>
-          </li>
-        </ul>
-      </footer>
+    <footer class="footer">
+      <p class="footerP">
+        Regístrate a nuestro newsletter y obtén las últimas novedades:
+      </p>
+      <form action="" method="get" enctype="text/plain">
+        <input type="email" placeholder="Tu correo electronico" required />
+        <button class="btn btn-secondary" type="submit">
+          Enviar formulario
+        </button>
+      </form>
+      <ul class="footerMenu" class="footerLista">
+        <li class="footerLista">
+          <a href="https://www.facebook.com/espaciodualceramica">Facebook</a>
+        </li>
+        <li class="footerLista">
+          <a href="https://www.instagram.com/espaciodualceramica/?hl=es-la"
+            >Instagram</a
+          >
+        </li>
+        <li class="footerLista">
+          <a href="https://www.youtube.com/c/EspacioDualCeramica">Youtube</a>
+        </li>
+      </ul>
     </footer>
 
     <script

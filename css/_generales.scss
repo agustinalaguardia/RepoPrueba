@@ -1,0 +1,114 @@
+/*------------------------------------header*/
+.header {
+  /* CONECTO LO QUE DIAGRAME EN EL GRID AREA CON EL ELEMENTO EN CUESTION */
+  grid-area: header;
+  /* APLICO FLEXBOX DESDE EL HEADER HACIA SUS HIJOS PARA ORDENAR EL LOGO Y EL MENU */
+  width: 100%;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.headerLogo {
+  width: 20%;
+  height: 30%;
+}
+/*------------------------------------footer*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  grid-area: footer;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+  .footerLista {
+    list-style: none;
+    color: darkslateblue;
+    font-size: 20px;
+
+    text-align: right;
+    width: 100%;
+  }
+  .footerP {
+    color: gray;
+  }
+  .footerMenu {
+    display: flex;
+    flex-direction: row;
+  }
+  .footerMenu > li {
+    text-align: left;
+    padding: 1rem;
+  }
+}
+/*-------------------------------------------------------------------------------nosotros*/
+.nosotrosParrafo {
+  flex-direction: row;
+  display: flex;
+}
+/*-------------------------------------------------------------------------------*productos*/
+.productosParrafo {
+  flex-direction: row;
+  display: flex;
+}
+/*-------------------------------------------------------------------------------*faqs*/
+.faqsParrafo {
+  flex-direction: column;
+  display: flex;
+  .faqsLista {
+    list-style: none;
+  }
+}
+/*-------------------------------------------------------------------------------*404*/
+.img404 {
+  width: 400px;
+  height: 350px;
+}
+
+/*mapa colores usados en paginas*/
+$colores: (
+  violeta: indigo,
+  gris: gray,
+  blanco: white,
+  negro: black,
+  violetaOscuro: darkslateblue,
+);
+
+@each $name, $color in $colores {
+  .color--#{$name} {
+    color: $color;
+  }
+}
+
+/*ejemplo condicional con h5*/
+$color: indigo;
+h5 {
+  @if $color==indigo {
+    background-color: none;
+  } @else if $color==red {
+    background-color: pink;
+  } @else {
+    background-color: beige;
+  }
+}
+
+//PAGE CONTACTO
+
+.sectionForm {
+  display: flex;
+  flex-direction: row;
+  row-gap: 2px;
+  align-content: center;
+}
+
+.formInputs {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.formBtn {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
